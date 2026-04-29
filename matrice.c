@@ -29,4 +29,3 @@ int getPoids(Graphe g, int src, int dest) {
 }
 
 int nbSommets(Graphe g) { return g->n; }
-

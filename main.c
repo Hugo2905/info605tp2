@@ -15,9 +15,7 @@ int main() {
     
     printf("--- Test de l'algorithme ---\n");
     dijkstra(g, 0);
-    
-    // Libération de la mémoire (à implémenter dans matrice.c / listes.c)
-    // detruireGraphe(g); 
+
 
     return 0;
 }
