@@ -2,9 +2,11 @@
 #include <stdlib.h>
 #include "graphe.h"
 #define INFINI 999999
+
+// Implémentation d'un graphe à l'aide d'une matrice d'adjacence
 struct s_graphe {
-    int n;
-    int** matrice;
+    int n; // Nombre de sommets
+    int** matrice; // matrice[i][j] = poids de l'arc de i à j, ou INFINI si pas d'arc
 };
 
 Graphe creerGraphe(int nbSommets) {
@@ -23,7 +25,7 @@ void ajouterArc(Graphe g, int src, int dest, int poids) {
 }
 
 int getPoids(Graphe g, int src, int dest) {
-    return g->matrice[src][dest];
+    return g->matrice[src][dest]; 
 }
 
 int nbSommets(Graphe g) { return g->n; }
